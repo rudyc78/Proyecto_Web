@@ -5,7 +5,7 @@ from .models import alumno, materia
 # Create your views here.
 
 def saludo(request):
-    return HttpResponse("Welcome")
+    return HttpResponse("Welcome to my site")
 
 def alumno_table(request):
     capturar = list(alumno.objects.values())
