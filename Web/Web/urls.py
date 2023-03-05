@@ -19,8 +19,11 @@ from store import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.saludo),
+    path('', views.album),
     path('alumno/', views.alumno_table),
-    path('materia/', views.materia_table)
+    path('materia/', views.materia_table),
+    path('index/', views.index),
+    path('album/', views.album),
+
 
 ]

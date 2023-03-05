@@ -14,3 +14,10 @@ def alumno_table(request):
 def materia_table(request):
     capturar = list(materia.objects.values())
     return JsonResponse(capturar, safe=False)
+
+def index(request):
+  return render(request, "index.html")
+
+def album(request):
+    return render(request, "Album.html")
+
