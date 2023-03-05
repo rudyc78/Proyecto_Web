@@ -21,3 +21,6 @@ def index(request):
 def album(request):
     return render(request, "Album.html")
 
+def cart(request):
+    return render(request, "Shopping cart.html")
+

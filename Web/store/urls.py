@@ -7,6 +7,7 @@ path('',views.album),
 path('alumno/', views.alumno_table),
 path('materia/', views.materia_table),
 path('index/', views.index),
-path('album', views.album),
+path('album/', views.album),
+path('cart/', views.cart),
 
 ]
