@@ -20,7 +20,7 @@ def index(request):
   return render(request, "index.html")
 
 def pant_mujer (request):
-    return render(request, "blusas.html")
+    return render(request, "pantalones-mujeres.html")
 
 def cart(request):
     return render(request, "Shopping cart.html")
