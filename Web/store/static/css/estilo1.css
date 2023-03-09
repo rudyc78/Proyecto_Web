@@ -1,0 +1,91 @@
+*{
+  border-radius: 5px;
+}
+
+.header {
+    padding: 5px;
+    text-align: center;
+    text-shadow: 3px 3px 1px gray;
+    background: #1abc9c;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px; 
+    margin-top : 15px;
+    
+  } 
+#brand {
+  display:inline-block;
+  animation-name: text;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-delay: 4s;
+  animation-direction: alternate;
+}
+ 
+@keyframes text {
+  from {color: white;}
+  to {color: black;}
+}
+.container {
+    padding: 15px;
+    background-color: #1abc9c;
+    justify-content: center;
+    margin-bottom: 5px; 
+    margin-bottom: 15px; 
+    margin-top : 15px;
+}
+
+.flexbox-container{
+  display: grid;
+  background-color: whitesmoke;
+  margin-bottom: 15px; 
+  margin-top : 15px;
+  column-gap: 15px;
+  grid-template-columns: 30% 70%;
+  
+}
+
+.flexbox-item-1{
+  background-image: url('static/parque1.jpg');
+  display: grid;
+  grid-gap: 10px;
+  justify-items:self-start;
+
+}
+.flexbox-item-1 > li{
+  position: absolute;
+  color: white;
+  
+}
+
+.flexbox-item-2{  
+  color: black;
+}
+
+#listgroup {
+  margin: 5px;
+  align-self: center;
+}
+
+
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50px;
+  background-color: coral;
+
+}
+
+#formulario{
+  background-color:burlywood;
+}
+.redes-sociales i{
+  font-size: 30px;
+  padding: 20px;
+  color: black;
+ 
+}
+.button-formulario{
+  color: black;
+  text-decoration: none;
+}

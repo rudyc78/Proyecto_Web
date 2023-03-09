@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href= '{% static "css/bootstrap.min.css"%}'/>
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <!--Ejemplos con jinja loops-->
+    <h1 style="color: red; text-align: center;">Este es un ejemplo de jinja loops</h1>
+    <p style="text-align:left; color:blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam obcaecati voluptas architecto sequi vitae reprehenderit tenetur, eveniet officiis. Reiciendis facere, totam quo eligendi optio ut?</p>
+    <h1 style="background-color: blue; display:inline-block">{{ x }}</h1>
+    <br>
+    <h2>Website creado por {{ creador }} </h2>
+  
+
+    <h1 style="text-align:center;">Jinja loops</h1>
+
+    <!--Query set sin jinja loop-->
+    <h3> {{ person }} </h3>
+    
+    <!--Query set con jinja loop y boostrap-->
+    {% for i in person %}
+
+    <button class="btn btn-warning"> {{ i.name }} </button> 
+ 
+
+    {% endfor %}
+    <br>
+    <br>
+
+    <!--Query set con jinja loop y bosstrap-->
+    {% for i in person %}
+
+    <button class="btn btn-danger"> {{ i.age }} </button> 
+ 
+
+    {% endfor %}
+
+    <!--Query set con jinja condtional y bosstrap-->
+    {% for i in person %} 
+    {% if {{i.age}} >= 18 %}
+    
+    <h1>Mayor de edad</h1>
+
+    {% else %}
+    <h2>Es menor de edad</h2>
+
+
+    {% endif %}
+    {% endfor %}
+    
+
+
+</div>
+    
+</body>
+</html>

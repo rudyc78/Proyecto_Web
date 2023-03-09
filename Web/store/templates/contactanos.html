@@ -1,0 +1,156 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <div>  </div>
+    
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<title>Tienda en Linea de Articulos Deportivos</title>
+<style type="text/css">
+#navegador ul{
+list-style-type: none;
+text-align: center;
+}
+#navegador li{
+display: inline;
+text-align: center;
+margin: 0 10px 0 0;
+}
+#navegador li a {
+padding: 2px 7px 2px 7px;
+color: #666;
+background-color: #eeeeee;
+border: 1px solid #ccc;
+text-decoration: none;
+}
+#navegador li a:hover{
+background-color: #333333;
+color: #ffffff;
+}
+.header{
+    background-color: black;
+    color: white;
+}
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.headLine{
+    margin: 2em;
+}
+.mainCarrousel{
+    width: 60%;
+}
+.form{
+    width: 100%;
+}
+</style>
+</head>
+
+<body>
+<!--HEADER AND MENU-->
+<div class="row header">
+    <div class="col-8">
+        <img src="imagenes/logotipo.png">
+    </div>
+    <div class="col-4 text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="estilos.html">Estilos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+    
+
+
+<h5 class="headLine">Aqui podras adquirir la equipacion del Futbol Club Barcelona</h5><br>
+<div class="row headLine">
+    <div class="col-4 text-center">
+        
+    </div>
+    <div class="col-4 text-center">
+        <p>Buscar en la web: </p>
+
+        <input type="text" class="form">
+
+        <button class="btn btn-primary form">Buscar</button>
+    </div>
+    <div class="col-4 text-center">
+    
+    </div>
+</div>
+
+<div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+        
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+    </form>
+    </div>  
+</div>
+
+</body>
+</html>
