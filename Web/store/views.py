@@ -17,13 +17,13 @@ def materia_table(request):
     return JsonResponse(capturar, safe=False)
 
 def index(request):
-  return render(request, "index.html")
+  return render(request, "index.html" name='index')
 
 def pant_mujer (request):
     return render(request, "pantalones-mujeres.html")
 
-def cart(request):
-    return render(request, "Shopping cart.html")
+def blusas(request):
+    return render(request, "blusas.html")
 
 def album (request):
     return render(request, "Album.html")
