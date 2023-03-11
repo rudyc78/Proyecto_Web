@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--CSS Bootstrap-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href= '{% static "./css/bootstrap.min.css"%}'>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="damas.css">
+    <link href= '{% static "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" %}' rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href= '{% static "damas.css" %}'>
     <title>Pantalones Damas</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
     <!--Barra de navegacion-->
     <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-            <img src="Carrusel y logo/logo.jpg" alt="Bootstrap" width="120" height="90">
+            <img src= '{% static "Carrusel y logo/logo.jpg" %}' alt="Bootstrap" width="120" height="90">
           <!--Elemento que hace colapsar la barra navegadora-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,34 +45,6 @@
                   <li><a class="dropdown-item" href="blusas.html" target="_blank">Blusas</a></li>
                   <li><a class="dropdown-item" href="zapatos-dama.html" target="_blank">Sandalias</a></li>
                   <li><hr class="dropdown-divider"></li>
-                </ul>
-              </li>
-
-              <!--Primer Dropdown menu-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Caballeros
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pantalones-caballeros.html" target="_blank">Panatalones</a></li>
-                  <li><a class="dropdown-item" href="camisas-caballero.html" target="_blank">Camisas</a></li>
-                  <li><a class="dropdown-item" href="zapatos-caballeros.html" target="_blank">Zapatos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-
-              <!--Segundo Dropdown menu-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Niños
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pantalones-niños.html" target="_blank">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="camisas-niños.html" target="_blank">Camisas</a></li>
-                  <li><a class="dropdown-item" href="zapatos-niños.html" target="_blank">Zapatos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
               
@@ -163,7 +135,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama12.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama12.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.</p>
@@ -172,7 +144,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama2.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama2.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -182,7 +154,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama3.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama3.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.                                </p>
@@ -191,7 +163,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama4.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama4.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -201,7 +173,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama5.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama5.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.</p>
@@ -210,7 +182,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama6.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama6.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -220,7 +192,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama7.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama7.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -230,7 +202,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama8.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama8.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -240,7 +212,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama9.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama9.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -250,7 +222,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama10.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama10.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -260,7 +232,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama11.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama11.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                             <div class="card-body">
                                 <h5 class="card-title">Pantalones vestir</h5>
                                 <p class="card-text">Pantalones que se ajustan a tus medidas. Variedad de estilos y marcas.
@@ -270,7 +242,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="Damas/Panatalones-Dama/pantalondama1.jpg" alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
+                        <img src= '{% static "Damas/Panatalones-Dama/pantalondama1.jpg"%}' alt="galeriacamisas" class="card-img-top" width="100%" height="350px">
                         div class="card-body">
                         <h5 class="card-title">Pantalones vestir</h5>
                         <p class="card-text">This shoPantalones que se ajustan a tus medidas. Variedad de estilos y marcas.</p>
@@ -293,7 +265,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src= '{% static "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"%}' integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
