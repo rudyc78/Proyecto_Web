@@ -25,6 +25,6 @@ def pant_mujer (request):
 def blusas(request):
     return render(request, "blusas.html")
 
-def album (request):
-    return render(request, "Album.html")
+def zap_dama(request):
+    return render(request, "zapatos-dama.html")
 
