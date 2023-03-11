@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" target="_blank">Home</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}" target="_blank">Home</a>
               </li>                
             
               <!--Primer Dropdown menu-->
@@ -40,40 +40,13 @@
                   Damas
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="index.html" target="_blank">Panatalones</a></li>
-                  <li><a class="dropdown-item" href="blusas.html" target="_blank">Blusas</a></li>
-                  <li><a class="dropdown-item" href="zapatos-dama.html" target="_blank">Sandalias</a></li>
+                  <li><a class="dropdown-item" href="{% url 'pant-mujer' %}" target="_blank">Panatalones</a></li>
+                  <li><a class="dropdown-item" href="{% url 'blusas' %}" target="_blank">Blusas</a></li>
+                  <li><a class="dropdown-item" href="{% url 'zapdamas' %}" target="_blank">Sandalias</a></li>
                   <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>
-
-              <!--Primer Dropdown menu-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Caballeros
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pantalones-caballeros.html" target="_blank">Panatalones</a></li>
-                  <li><a class="dropdown-item" href="camisas-caballero.html" target="_blank">Camisas</a></li>
-                  <li><a class="dropdown-item" href="zapatos-caballeros.html" target="_blank">Zapatos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-
-              <!--Segundo Dropdown menu-->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Niños
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="pantalones-niños.html" target="_blank">Pantalones</a></li>
-                  <li><a class="dropdown-item" href="camisas-niños.html" target="_blank">Camisas</a></li>
-                  <li><a class="dropdown-item" href="zapatos-niños.html" target="_blank">Zapatos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+        
               
               <!--Tercer Dropdown menu-->
               <li class="nav-item">
