@@ -19,11 +19,11 @@ from store import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),
-    path('pant_mujer/', views.pant_mujer),
-    path('blusas/', views.blusas),
-    path('index/', views.index),
-    path('album/', views.album),
+    path('', views.index, name ="home"),
+    path('pant_mujer/', views.pant_mujer, name = 'pant-mujer'),
+    path('blusas/', views.blusas, name = "blusas"),
+    path('zap-damas/', views.zap_dama, name ="zapdamas"),
+    ##path('album/', views.album),
 
    
 
