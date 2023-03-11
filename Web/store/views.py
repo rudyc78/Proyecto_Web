@@ -17,7 +17,7 @@ def materia_table(request):
     return JsonResponse(capturar, safe=False)
 
 def index(request):
-  return render(request, "index.html" name='index')
+  return render(request, "index.html")
 
 def pant_mujer (request):
     return render(request, "pantalones-mujeres.html")
