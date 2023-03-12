@@ -17,6 +17,9 @@
     
   <!--Header de  la pagina-->
     <div class="header">
+      <div class="login"> 
+        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning">Login</a>
+      </div>
       <div id="brand">
         <h1 id=Style>Style</h1>
         <p>Viste con estilo</p>
@@ -151,7 +154,7 @@
     <!--Pie de pagina-->
   <footer>
     <div class="container-fluid bg-warning text-center p-3">
-      <a class="button-formulario" href='{% static "formulario.html"%}' target="_blank">
+      <a class="button-formulario" href="{% url 'contactanos' %}" target="_blank">
         <h3>Contactanos</h3>
       <div class="redes-sociales">
         <a href="https://facebook.com" target="_blank" class="button-twitter"><i class="fa-brands fa-facebook"></i></a>

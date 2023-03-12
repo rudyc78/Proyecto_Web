@@ -23,6 +23,9 @@ urlpatterns = [
     path('pant_mujer/', views.pant_mujer, name = 'pant-mujer'),
     path('blusas/', views.blusas, name = "blusas"),
     path('zap-damas/', views.zap_dama, name ="zapdamas"),
+    path('login/', views.login_page, name ='login'),
+    path('contactanos/', views.contactanos, name ='contactanos')
+    
     ##path('album/', views.album),
 
    

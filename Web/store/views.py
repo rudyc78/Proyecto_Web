@@ -28,3 +28,10 @@ def blusas(request):
 def zap_dama(request):
     return render(request, "zapatos-dama.html")
 
+def login_page(request):
+    return render(request, "login.html")
+
+def contactanos(request):
+    return render(request, "formulario_mardon.html")
+
+
