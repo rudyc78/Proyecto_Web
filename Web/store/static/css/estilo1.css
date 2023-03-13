@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu:wght@300&display=swap');
+
 
 *{
   border-radius: 5px;
@@ -113,6 +115,7 @@
   padding: 0px 10px 0px 10px;
   font-family:ubuntu;
   font-weight:bolder;
+  box-shadow:20px 20px 50px rgb(29, 209, 209);
 
   
 
@@ -130,7 +133,11 @@
 #r-title{
   text-align: center;
   margin-bottom: 5%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 2%;
+  font-family:Ubuntu;
+  font-weight: bolder;
+  font-size: 50px;
+  font-style: italic;
 
 }
 #logo{
