@@ -16,9 +16,10 @@
 <body>
     
   <!--Header de  la pagina-->
-    <div class="header">
-      <div class="login"> 
-        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning">Login</a>
+    <div class="header" >
+      <div> 
+        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning" style="float:right";>Login</a>
+        <a id="login" type="button" href="{% url 'signup' %}" class="btn btn-outline-warning" style="float:right";>Signup</a>
       </div>
       <div id="brand">
         <h1 id=Style>Style</h1>
