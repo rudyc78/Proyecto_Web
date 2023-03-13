@@ -37,6 +37,9 @@ def login_page(request):
 def contactanos(request):
     return render(request, "formulario_mardon.html")
 
+def reset(request):
+    return render(request, "resetpassword.html")
+
 def form(request):
     if request.method == "GET":
         return render(request, 'signup.html', 
