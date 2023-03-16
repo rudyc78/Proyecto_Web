@@ -27,8 +27,9 @@ urlpatterns = [
     path('contactanos/', views.contactanos, name ='contactanos'),
     path('signup/', views.form, name="signup"),
     path('reset/', views.reset, name='reset'),
+    path('db/', views.producto, name='db'),
     
-    ##path('album/', views.album),
+
 
    
 

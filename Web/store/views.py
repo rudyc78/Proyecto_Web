@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login
+from .models import productos
 
 
 # Create your views here.
@@ -76,4 +77,14 @@ def form(request):
                 }
                               
                               )
+
+
+def producto(request):
+    t = productos.objects.all()
+    return render(request, 'db.html', {
+
+        't': t
+
+    })
+
 
