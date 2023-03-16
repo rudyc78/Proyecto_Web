@@ -87,4 +87,12 @@ def producto(request):
 
     })
 
+def cafe(request):
+    c = productos.objects.all(id="2")
+    return render(request, 'pant-cafe.html', {
+
+        'c': c
+
+    })
+
 
