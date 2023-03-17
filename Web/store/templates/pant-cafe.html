@@ -96,18 +96,18 @@
       </nav>
     
 
-    <div style="display:inline; margin-left:-20px;"> 
-      <img src= '{% static "Damas/Panatalones-Dama/pantalondama12.jpg"%}' alt="galeriacamisas"  width="300px" height="auto" style="margin: 10% 0px 0px 35%; position:relative;">
-
-      {% for x in t %}
-      <div  style="float:right; color:#14265c; padding: 20% 35% 0% 10%; margin: -42% 0% 0% 40%; position:absolute">
-          <h2>{{x.descripcion}}</h2>
-          <h2>Marca: {{x.marca}}</h2>
-          <h2>Color: {{x.color}}</h2>    
-          <h2>Precio: ${{x.precio}}</h2>
-          <button>Agregar al carrito</button>
-          <button>Eliminar</button>    
-      
+      <div style="display:inline; margin-left:-20px;"> 
+        <img src= '{% static "Damas/Panatalones-Dama/pantalondama2.jpg"%}' alt="galeriacamisas"  width="300px" height="auto" style="margin: 10% 0px 0px 35%; position:relative;">
+  
+        {% for x in t %}
+        <div  style="float:right; color:#14265c; padding: 27% 35% 0% 12%; margin: -42% 0% 0% 40%; position:absolute">
+            <h2>{{x.descripcion}}</h2>
+            <h2>Marca: {{x.marca}}</h2>
+            <h2>Color: {{x.color}}</h2>    
+            <h2>Precio: ${{x.precio}}</h2>
+            <button>Agregar al carrito</button>
+            <button>Eliminar</button>    
+        
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>

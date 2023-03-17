@@ -80,8 +80,16 @@ def form(request):
 
 
 def producto(request):
-    t = productos.objects.all()
+    t = productos.objects.filter(id="1")
     return render(request, 'db.html', {
+
+        't': t
+
+    })
+
+def cafe(request):
+    t = productos.objects.filter(id="2")
+    return render(request, 'pant-cafe.html', {
 
         't': t
 

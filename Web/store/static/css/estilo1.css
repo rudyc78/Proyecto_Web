@@ -153,3 +153,39 @@
   padding-left: -3px;
   text-align: center;
 }
+#resetpassword{
+  background-color:#20c997;
+  width:fit-content;
+  position:relative;
+  margin:auto;
+  margin-top: 40px;
+  border-radius: 2%;
+  padding: 0px 10px 0px 10px;
+  font-family:ubuntu;
+  font-weight:bolder;
+  box-shadow:20px 20px 50px rgb(29, 209, 209);
+}
+#login{
+  background-color:#20c997;
+  width:fit-content;
+  position:relative;
+  margin:auto;
+  margin-top: 40px;
+  border-radius: 2%;
+  padding: 0px 10px 0px 10px;
+  font-family:ubuntu;
+  font-weight:bolder;
+  box-shadow:20px 20px 50px rgb(29, 209, 209);
+}
+#formulario{
+  background-color:#20c997;
+  width:fit-content;
+  position:relative;
+  margin:auto;
+  margin-top: 40px;
+  border-radius: 2%;
+  padding: 0px 10px 0px 10px;
+  font-family:ubuntu;
+  font-weight:bolder;
+  box-shadow:20px 20px 50px rgb(29, 209, 209);
+}
