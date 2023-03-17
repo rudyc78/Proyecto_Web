@@ -9,7 +9,7 @@ class productos(models.Model):
     precio = models.IntegerField()
 
     def __str__(self):
-        return  self.marca+'-'+self.descripcion+'-'+ self.precio
+        return  self.marca
     
     
 

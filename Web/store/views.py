@@ -81,7 +81,7 @@ def form(request):
 
 def producto(request):
     t = productos.objects.filter(id="1")
-    return render(request, 'db.html', {
+    return render(request, 'db-temp/pant-gris.html', {
 
         't': t
 
@@ -89,7 +89,14 @@ def producto(request):
 
 def cafe(request):
     t = productos.objects.filter(id="2")
-    return render(request, 'pant-cafe.html', {
+    return render(request, 'db-temp/pant-cafe.html', {
+
+        't': t
+
+    })
+def negro(request):
+    t = productos.objects.filter(id="3")
+    return render(request, 'db-temp/pant-negro.html', {
 
         't': t
 

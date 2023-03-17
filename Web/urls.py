@@ -29,6 +29,7 @@ urlpatterns = [
     path('reset/', views.reset, name='reset'),
     path('db/', views.producto, name='db'),
     path('cafe/', views.cafe, name='cafe'),
+    path('negro/', views.negro, name='negro'),
     
 
 

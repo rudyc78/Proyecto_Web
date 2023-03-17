@@ -16,6 +16,8 @@
   <body>
      <!--Header de  la pagina-->
      <div class="header">
+      <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning" style="float:right; margin:30px 20px 0px 0px ";>Login</a>
+        <a type="button" href="{% url 'signup' %}" class="btn btn-outline-warning" style="float:right;  margin:30px 10px 0px 0px ";>Signup</a>
         <h1>Style.</h1>
         <p>Viste con estilo</p>
     </div>
@@ -41,7 +43,7 @@
                   Damas
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href= "{% url 'pant-mujer' %}" target="_blank">Panatalones</a></li>
+                  <li><a class="dropdown-item" href= "{% url 'pant-mujer' %}" target="_blank">Pantalones</a></li>
                   <li><a class="dropdown-item" href= "{% url 'blusas' %}" target="_blank">Blusas</a></li>
                   <li><a class="dropdown-item" href= "{% url 'zapdamas' %}" target="_blank">Sandalias</a></li>
                   <li><hr class="dropdown-divider"></li>

@@ -18,8 +18,8 @@
   <!--Header de  la pagina-->
     <div class="header" >
       <div> 
-        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning" style="float:right";>Login</a>
-        <a id="login" type="button" href="{% url 'signup' %}" class="btn btn-outline-warning" style="float:right";>Signup</a>
+        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning" style="float:right; margin:30px 20px 0px 0px ";>Login</a>
+        <a type="button" href="{% url 'signup' %}" class="btn btn-outline-warning" style="float:right;  margin:30px 10px 0px 0px ";>Signup</a>
       </div>
       <div id="brand">
         <h1 id=Style>Style</h1>
@@ -49,7 +49,7 @@
                   Damas
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'pant-mujer' %}" target="_blank">Panatalones</a></li>
+                  <li><a class="dropdown-item" href="{% url 'pant-mujer' %}" target="_blank">Pantalones</a></li>
                   <li><a class="dropdown-item" href="{% url 'blusas' %}" target="_blank">Blusas</a></li>
                   <li><a class="dropdown-item" href="{% url 'zapdamas' %}" target="_blank">Sandalias</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -96,18 +96,21 @@
       </nav>
     
 
-    <div style="display:inline; margin-left:-20px;"> 
-      <img src= '{% static "Damas/Panatalones-Dama/pantalondama12.jpg"%}' alt="galeriacamisas"  width="300px" height="auto" style="margin: 10% 0px 0px 35%; position:relative;">
-
-      {% for x in t %}
-      <div  style="float:right; color:#14265c; padding: 20% 35% 0% 10%; margin: -42% 0% 0% 40%; position:absolute">
-          <h2>{{x.descripcion}}</h2>
-          <h2>Marca: {{x.marca}}</h2>
-          <h2>Color: {{x.color}}</h2>    
-          <h2>Precio: ${{x.precio}}</h2>
-          <button>Agregar al carrito</button>
-          <button>Eliminar</button>    
-      
+      <div style="display:inline; margin-left:-20px;"> 
+        <img src= '{% static "Damas/Panatalones-Dama/pantalondama2.jpg"%}' alt="galeriacamisas"  width="300px" height="auto" style="margin: 10% 0px 0px 35%; position:relative;">
+  
+        {% for x in t %}
+        <div  style="float:right; color:#14265c; padding: 27% 35% 0% 12%; margin: -42% 0% 0% 40%; position:absolute">
+            <h2>{{x.descripcion}}</h2>
+            <h2>Marca: {{x.marca}}</h2>
+            <h2>Color: {{x.color}}</h2>    
+            <h2>Precio: ${{x.precio}}</h2></br>
+            <button class="myButton">🛒Agregar al carrito</button>
+            
+        
+        </div>
+        
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
+      <script src= '{% static "js/bootstrap.bundle.min.js"%}'></script>
+      <script src= "https://kit.fontawesome.com/77bb8538da.js" crossorigin="anonymous"></script>
