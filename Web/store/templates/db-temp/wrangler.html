@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce</title>
+
+    <!-- Hoja de estilo externa o en cascada -->
+    <link rel="stylesheet" href= '{% static "css/estilo1.css"%}'/>
+
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href= '{% static "css/bootstrap.min.css"%}'/>
+</head>
+<body>
+    
+  <!--Header de  la pagina-->
+    <div class="header" >
+      <div> 
+        <a type="button" href="{% url 'login' %}" class="btn btn-outline-warning" style="float:right; margin:30px 20px 0px 0px ";>Login</a>
+        <a type="button" href="{% url 'signup' %}" class="btn btn-outline-warning" style="float:right;  margin:30px 10px 0px 0px ";>Signup</a>
+      </div>
+      <div id="brand">
+        <h1 id=Style>Style</h1>
+        <p>Viste con estilo</p>
+      </div>
+    </div>
+
+
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-expand-lg bg-warning">
+
+        <div class="container-fluid">
+            <img src= '{% static "Carrusel y logo/logo.jpg"%}' alt="Bootstrap" width="120" height="90">
+          <!--Elemento que hace colapsar la barra navegadora-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>                
+            
+              <!--Primer Dropdown menu-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Damas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'pant-mujer' %}" target="_blank">Pantalones</a></li>
+                  <li><a class="dropdown-item" href="{% url 'blusas' %}" target="_blank">Blusas</a></li>
+                  <li><a class="dropdown-item" href="{% url 'zapdamas' %}" target="_blank">Sandalias</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+
+              <!--Primer Dropdown menu
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Caballeros
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href='{% static "pantalones-caballeros.html"%}' target="_blank" >Panatalones</a></li>
+                  <li><a class="dropdown-item" href='{% static "camisas-caballero.html"%}' target="_blank">Camisas</a></li>
+                  <li><a class="dropdown-item" href='{% static "zapatos-caballeros.html"%}' target="_blank">Zapatos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+
+                </ul>
+              </li>-->
+
+              <!--Segundo Dropdown   menu
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Niños
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href='{% static "pantalones-niños.html"%}' target="_blank">Pantalones</a></li>
+                  <li><a class="dropdown-item" href='{% static "camisas-niños.html"%}' target="_blank">Camisas</a></li>
+                  <li><a class="dropdown-item" href='{% static "zapatos-niños.html"%}' target="_blank">Zapatos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>-->
+            
+              <!--Tercer Dropdown menu-->
+              <li class="nav-item">
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+
+    <div style="display:inline; margin-left:-20px;"> 
+      <img src='{% static "Damas/Panatalones-Dama/pantalondama6.jpg" %}' alt="galeriacamisas"  width="300px" height="auto" style="margin: 10% 0px 0px 35%; position:relative;">
+
+      {% for x in t %}
+      <div  style="float:right; color:#14265c; padding: 20% 35% 0% 12%; margin: -35% 0% 0% 40%; position:absolute">
+          <h2>{{x.descripcion}}</h2>
+          <h2>Marca: {{x.marca}}</h2>
+          <h2>Color: {{x.color}}</h2>    
+          <h2>Precio: ${{x.precio}}</h2>
+          <button class="myButton">🛒Agregar al carrito</button>
+          
+      
+      </div>
+      {% endfor %}
+      
+    </div>
+    
+    <script src= '{% static "js/bootstrap.bundle.min.js"%}'></script>
+    <script src= "https://kit.fontawesome.com/77bb8538da.js" crossorigin="anonymous"></script>

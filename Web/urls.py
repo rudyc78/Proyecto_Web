@@ -30,8 +30,9 @@ urlpatterns = [
     path('db/', views.producto, name='db'),
     path('cafe/', views.cafe, name='cafe'),
     path('negro/', views.negro, name='negro'),
-    
-
+    path('tommy/', views.tommy, name='tommy'),
+    path('silver/', views.silver, name='silver'),
+    path('wrangler/', views.wrangler, name='wrangler')
 
    
 

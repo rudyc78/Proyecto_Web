@@ -102,4 +102,28 @@ def negro(request):
 
     })
 
+def tommy(request):
+    t = productos.objects.filter(id="4")
+    return render(request, 'db-temp/tommy.html', {
+
+        't': t
+
+    })
+
+def silver(request):
+    t = productos.objects.filter(id="5")
+    return render(request, 'db-temp/silver.html', {
+
+        't': t
+
+    })
+
+def wrangler(request):
+    t = productos.objects.filter(id="6")
+    return render(request, 'db-temp/wrangler.html', {
+
+        't': t
+
+    })
+
 
