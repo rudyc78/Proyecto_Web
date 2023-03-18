@@ -13,10 +13,3 @@ class productos(models.Model):
     
     
 
-"""class materia(models.Model):
-    subject = models.CharField(max_length=300)
-    score = models.CharField(max_length=10)
-    
-class login(models.Model):
-    subject = models.CharField(max_length=300)
-    score = models.CharField(max_length=10)"""
