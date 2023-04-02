@@ -17,6 +17,15 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+##Renderconfig
+
+import environ
+
+env = environ.Env( )
+environ.Env.read_env( )
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -24,9 +33,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y^2(dz^$2)$*-_ir^9atqx0kcr4++p%@!rllx)b4$7pxz*$s3$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -77,11 +86,22 @@ WSGI_APPLICATION = 'Web.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+"""
+
+import dj_database_url
+
+DATABASES = {
+
+ 'default':dj_database_url.parse('postgres://storedb_hgp8_user:8fFA4wY6sPZ1PFWivb9z8PyjZ1YOqYKb@dpg-cggbmr64daddcg3c6g0g-a.ohio-postgres.render.com/storedb_hgp8')
+
+
 }
 
 
@@ -133,6 +153,7 @@ STATICFILES_DIR = (
 
    BASE_DIR / 'static',
 )
+
 
 
 
